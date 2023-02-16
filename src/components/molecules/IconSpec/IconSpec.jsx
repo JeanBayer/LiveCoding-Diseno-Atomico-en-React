@@ -1,12 +1,15 @@
-import Icon from './../../atoms/Icon/Icon'
-import './style.css'
+import { HoverWrapper } from "../../util";
+import Icon from "./../../atoms/Icon/Icon";
+import "./style.css";
 
 const IconSpec = ({ children, icon }) => {
-    return (
-        <span className='specification'>
-            <Icon type={icon} /> {children}
-        </span >
-    )
-}
+  return (
+    <HoverWrapper type="molecule" message="IconSpec">
+      <span className="specification">
+        <Icon type={icon} /> {children}
+      </span>
+    </HoverWrapper>
+  );
+};
 
-export default IconSpec
+export default IconSpec;

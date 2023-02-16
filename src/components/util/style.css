@@ -5,6 +5,7 @@
   height: fit-content;
   border-radius: 5px;
   border: 1px solid transparent;
+  z-index: 2;
 
   text-transform: uppercase;
   transition: all 0.7s ease-in-out;

@@ -1,15 +1,17 @@
-import Input from "../../atoms/Input/Input"
-import Button from "../../atoms/Button/Button"
-import './style.css'
+import { HoverWrapper } from "../../util";
+import Input from "../../atoms/Input/Input";
+import Button from "../../atoms/Button/Button";
+import "./style.css";
 
 const SearchBar = () => {
-    return (
-        <div className="searchBar">
-            <Input type='text' placeholder='Buscar producto...' />
-            <Button variant="light" icon="search" text="Buscar" />
-        </div>
-    )
-}
+  return (
+    <HoverWrapper type="molecule" message="SearchBar">
+      <div className="searchBar">
+        <Input type="text" placeholder="Buscar producto..." />
+        <Button variant="light" icon="search" text="Buscar" />
+      </div>
+    </HoverWrapper>
+  );
+};
 
-
-export default SearchBar
+export default SearchBar;

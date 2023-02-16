@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./style.css";
 
 export const HoverWrapper = ({ children, message = "", type = "atom" }) => {
-  const [isHovered, setIsHovered] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   const styleMessage = classNames({
     type,
     [type]: true,

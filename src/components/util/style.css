@@ -29,7 +29,6 @@
   display: flex;
   gap: 3px;
   height: fit-content !important;
-
   text-transform: uppercase;
 
   /* reset styles */

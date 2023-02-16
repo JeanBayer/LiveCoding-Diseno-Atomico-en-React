@@ -1,7 +1,12 @@
-import './style.css'
+import { HoverWrapper } from "../../util";
+import "./style.css";
 
 const Input = ({ type, placeholder = "" }) => {
-  return <input type={type} placeholder={placeholder} />
-}
+  return (
+    <HoverWrapper type="atom" message="Input">
+      <input type={type} placeholder={placeholder} />
+    </HoverWrapper>
+  );
+};
 
-export default Input
+export default Input;

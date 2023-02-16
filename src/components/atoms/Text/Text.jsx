@@ -1,5 +1,10 @@
-import './style.css'
+import { HoverWrapper } from "../../util";
+import "./style.css";
 
-const Text = ({ text }) => <p>{text}</p>
+const Text = ({ text }) => (
+  <HoverWrapper type="atom" message="Text">
+    <p>{text}</p>
+  </HoverWrapper>
+);
 
-export default Text
+export default Text;

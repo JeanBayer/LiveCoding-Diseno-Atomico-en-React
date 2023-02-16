@@ -1,3 +1,9 @@
-const Image = ({ source, altText }) => <img src={source} alt={altText} />
+import { HoverWrapper } from "../../util";
 
-export default Image
+const Image = ({ source, altText }) => (
+  <HoverWrapper type="atom" message="Image">
+    <img src={source} alt={altText} />
+  </HoverWrapper>
+);
+
+export default Image;

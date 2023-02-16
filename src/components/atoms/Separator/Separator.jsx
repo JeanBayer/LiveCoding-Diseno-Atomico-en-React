@@ -1,5 +1,10 @@
-import './style.css'
+import { HoverWrapper } from "../../util";
+import "./style.css";
 
-const Separator = () => <hr />
+const Separator = () => (
+  <HoverWrapper type="atom" message="Separator">
+    <hr />
+  </HoverWrapper>
+);
 
-export default Separator
+export default Separator;

@@ -1,0 +1,73 @@
+.hoverContainer {
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  height: fit-content;
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+}
+
+.hoverContainer:hover.atom {
+  border: 1px solid #b24c63;
+}
+
+.hoverContainer:hover.molecule {
+  border: 1px solid #f2c078;
+}
+
+.hoverContainer:hover.organism {
+  border: 1px solid #73956f;
+}
+
+.hoverMessage {
+  position: absolute;
+  top: -15px;
+  display: flex;
+  gap: 3px;
+  height: fit-content !important;
+
+  text-transform: uppercase;
+
+  /* reset styles */
+  padding: 0 !important;
+  font-size: 10px !important;
+  border: none !important;
+}
+
+.type {
+  color: white;
+
+  /* reset styles */
+  padding: 3px 7px !important;
+  font-size: 10px !important;
+  border: none !important;
+
+  border-radius: 15px;
+}
+
+.type.atom {
+  background-color: #b24c63;
+}
+
+.type.molecule {
+  background-color: #f2c078;
+}
+
+.type.organism {
+  background-color: #73956f;
+}
+
+.message {
+  background-color: #eef1ef;
+  font-size: 10px;
+
+  /* reset styles */
+  padding: 3px 7px !important;
+  font-size: 10px !important;
+  border: none !important;
+
+  border-radius: 7px;
+}
